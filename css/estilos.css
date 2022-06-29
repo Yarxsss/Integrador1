@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(0, 0, 0);
+    max-width: 1000px;
+    min-width: 500px;
+    justify-content: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.contenedor {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    height: 150vh;
+    text-align: center;
+}
+
+.grid-header {
+    grid-column: 1/5;
+    background-color: rgb(3, 186, 192);
+}
+
+.text-header h1,
+h2 {
+    text-decoration: underline;
+    letter-spacing: 4pt;
+}
+
+.logo {
+    width: 100 px;
+    height: 150px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.grid-nav {
+    grid-column: span 4;
+    background-color: rgb(209, 255, 2);
+    text-align: center;
+}
+
+.grid-nav ul {
+    list-style: none;
+}
+
+.grid-nav ul li {
+    display: inline-flex;
+}
+
+.grid-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: rgb(68, 109, 3);
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 130px;
+}
+
+.grid-section {
+    border-radius: 50px;
+    grid-column: 1/4;
+    background-color: rgb(253, 253, 250);
+}
+
+.grid-aside {
+    grid-column: 4/5;
+    background-color: rgb(251, 255, 0);
+}
+
+.logo {
+    width: 100 px;
+    height: 150px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.grid-footer {
+    grid-column: 1/5;
+    background-color: rgb(10, 177, 177);
+}
